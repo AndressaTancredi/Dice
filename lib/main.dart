@@ -23,15 +23,19 @@ class DicePage extends StatelessWidget {
         children: [
           Expanded(
             // flex:1todo expanded vem com flex 1 por padrão.
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
+            child: FlatButton(
+              onPressed: (){
+                print('Left button got pressed.');
+              },
               child: Image.asset('images/dice1.png'),
             ),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Image.asset('images/dice1.png'),
+            child: FlatButton(
+              onPressed: (){
+                print('Right button got pressed.');
+              },
+                child: Image.asset('images/dice1.png'),
             ),
           ),
         ],
